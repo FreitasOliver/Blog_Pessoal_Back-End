@@ -20,17 +20,17 @@ public class SwaggerConfig {
 	@Bean
 	public Docket api() {
 		return new Docket(DocumentationType.SWAGGER_2).select()
-				.apis(RequestHandlerSelectors.basePackage("com.gen.bloguinhopessoal.controller"))
+				.apis(RequestHandlerSelectors.basePackage("com.gen.blogpessoal.controller"))
 				.paths(PathSelectors.any()).build().apiInfo(metadata()).useDefaultResponseMessages(false);
 	}
 
 	public static ApiInfo metadata() {
 		return new ApiInfoBuilder()
-				.title("Guilherme - Blog Pessoal")
+				.title("Everton - Blog Pessoal")
 				.description("Projeto para aprender sobre Spring Boot")
 				.version("1.0.0")
 				.license("Apache License Version 2.0")
-				.licenseUrl("https://github.com/Zoraten")
+				.licenseUrl("https://github.com/FreitasOliver")
 				.contact(contact()).build();
 	}
 
